@@ -1,0 +1,37 @@
+{
+  "name": "infinite-game",
+  "version": "0.0.0",
+  "description": "organise things with people. build a better world. good luck",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js",
+    "start-frameless": "FRAME=false npm start",
+    "test": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mixmix/infinite-game.git"
+  },
+  "keywords": [
+    "scuttlebutt",
+    "gatherings",
+    "calender"
+  ],
+  "author": "mixmix",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/mixmix/infinite-game/issues"
+  },
+  "homepage": "https://github.com/mixmix/infinite-game#readme",
+  "dependencies": {
+    "depject": "^4.1.1",
+    "depnest": "^1.3.0",
+    "electron": "^2.0.12",
+    "libnested": "^1.3.2",
+    "patchbay": "github:ssbc/patchbay#requireable",
+    "read-directory": "^3.0.1"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}

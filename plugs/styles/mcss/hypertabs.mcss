@@ -1,0 +1,20 @@
+Hypertabs {
+  nav {
+    div.icons {
+      font-size: 1rem
+      color: #fff
+
+      margin-right: .5rem
+
+      display: grid
+      grid-auto-flow: column
+      /* grid-gap: .5rem */
+
+      i.fa {
+        cursor: pointer
+
+        padding: .5rem
+      }
+    }
+  }
+}
