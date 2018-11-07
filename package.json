@@ -26,12 +26,12 @@
   "dependencies": {
     "depject": "^4.1.1",
     "depnest": "^1.3.0",
-    "electron": "^2.0.12",
     "libnested": "^1.3.2",
-    "patchbay": "github:ssbc/patchbay#requireable",
+    "patchbay": "^7.15.2",
     "read-directory": "^3.0.1"
   },
   "devDependencies": {
+    "electron": "^2.0.12",
     "standard": "^12.0.1"
   }
 }
