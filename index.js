@@ -10,6 +10,8 @@ var quitting = false
 // NOTE this is a fork of patchbay/index.js with small mods to point this as patchbay's server.js and assets
 const patchbayRoot = Path.join(__dirname, 'node_modules/patchbay')
 
+const appName = 'Infinite Game'
+
 console.log('STARTING electron')
 electron.app.on('ready', () => {
   startMenus()
@@ -60,7 +62,7 @@ function openMainWindow () {
     defaultHeight: 768
   })
   windows.main = openWindow(Path.join(__dirname, 'main.js'), {
-    title: 'Patchbay',
+    title: appName,
     show: true,
     x: windowState.x,
     y: windowState.y,
@@ -95,7 +97,7 @@ function openWindow (path, opts) {
       var electron = require('electron')
       var h = require('mutant/h')
       electron.webFrame.setVisualZoomLevelLimits(1, 1)
-      var title = ${JSON.stringify(opts.title || 'Patchbay')}
+      var title = ${JSON.stringify(opts.title || 'Infinite Game')}
       document.documentElement.querySelector('head').appendChild(
         h('title', title)
       )
