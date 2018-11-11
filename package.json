@@ -6,7 +6,9 @@
   "scripts": {
     "start": "electron index.js",
     "start-frameless": "FRAME=false npm start",
-    "test": "standard --fix"
+    "test": "standard --fix",
+    "rebuild": "cross-script npm rebuild --runtime=electron \"--target=$(electron -v)\" \"--abi=$(electron --abi)\" --disturl=https://atom.io/download/atom-shell",
+    "postinstall": "npm run rebuild"
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,7 @@
     "read-directory": "^3.0.1"
   },
   "devDependencies": {
+    "cross-script": "^1.0.5",
     "electron": "^2.0.12",
     "standard": "^12.0.1"
   }
