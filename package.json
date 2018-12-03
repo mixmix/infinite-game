@@ -1,6 +1,6 @@
 {
   "name": "infinite-game",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "organise things with people. build a better world. good luck",
   "main": "index.js",
   "scripts": {
